@@ -1,0 +1,5 @@
+C:\Users\diplant\Desktop\DocCheckDemo\DocExamineSystem\Bll\bin\Debug\Bll.dll
+C:\Users\diplant\Desktop\DocCheckDemo\DocExamineSystem\Bll\bin\Debug\Bll.pdb
+C:\Users\diplant\Desktop\DocCheckDemo\DocExamineSystem\Bll\obj\Debug\Bll.csprojResolveAssemblyReference.cache
+C:\Users\diplant\Desktop\DocCheckDemo\DocExamineSystem\Bll\obj\Debug\Bll.dll
+C:\Users\diplant\Desktop\DocCheckDemo\DocExamineSystem\Bll\obj\Debug\Bll.pdb

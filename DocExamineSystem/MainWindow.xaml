@@ -1,0 +1,12 @@
+﻿<Window x:Class="DocExamineSystem.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DocExamineSystem"
+        mc:Ignorable="d"
+        Title="文档审查系统" Height="350" Width="525" WindowState="Maximized" Icon="Doc.png" Topmost="True">
+    <Grid Background="#FFF0F6F7">
+        
+    </Grid>
+</Window>

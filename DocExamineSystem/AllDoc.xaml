@@ -1,0 +1,42 @@
+﻿<Window x:Class="DocExamineSystem.AllDoc"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DocExamineSystem"
+        mc:Ignorable="d"
+        Title="以往版本" Height="600" Width="1200" WindowState="Maximized" Icon="Doc.png">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="109*"/>
+            <ColumnDefinition Width="700*"/>
+            <ColumnDefinition Width="381*"/>
+        </Grid.ColumnDefinitions>
+        <Label x:Name="label" Content="" Height="21" Margin="10,0,10,10" VerticalAlignment="Bottom"/>
+        <Button x:Name="toIndexButton" Content="首页" Height="40" Margin="10,30,10,0" VerticalAlignment="Top" Click="ToIndex_ButtonClick"/>
+        <Button x:Name="oldAllDocButton" Content="以往版本" Height="40" Margin="10,100,10,0" VerticalAlignment="Top" Click="AllDoc_ButtonClick"/>
+        <Button x:Name="refreshButton" Content="刷新" Height="40" Margin="10,170,10,0" VerticalAlignment="Top" Click="Refresh_ButtonClick"/>
+        <DataGrid x:Name="dataGrid" Grid.ColumnSpan="2" Grid.Column="1" Margin="10,35,10,10" AutoGenerateColumns="False" ItemsSource="{Binding}" IsReadOnly="True" RowHeight="30">
+            <DataGrid.RowStyle>
+                <Style TargetType="DataGridRow">
+                    <Setter Property="Background" Value="#F0F0F0" />
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <!--当鼠标经过时 改变颜色-->
+                            <Setter Property="Background" Value="#F0F0F0"/>
+                            <Setter Property="Foreground" Value="#495A80"/>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </DataGrid.RowStyle>
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="文档编号" Binding="{Binding docId}"></DataGridTextColumn>
+                <DataGridTextColumn Header="文档名称" Binding="{Binding docName}"></DataGridTextColumn>
+                <DataGridTextColumn Header="文档路径" Binding="{Binding docPath}"></DataGridTextColumn>
+                <DataGridTextColumn Header="上传时间" Binding="{Binding docUploadTime}"></DataGridTextColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button x:Name="downloadDocButton" Content="下载" Grid.Column="2" HorizontalAlignment="Right" Height="20" Margin="0,10,10,0" VerticalAlignment="Top" Width="90" Click="DownloadDoc_ButtonClick"/>
+
+    </Grid>
+</Window>

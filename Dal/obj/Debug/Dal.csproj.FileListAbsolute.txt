@@ -1,0 +1,7 @@
+C:\Users\diplant\Desktop\DocCheckDemo\DocExamineSystem\Dal\bin\Debug\Dal.dll
+C:\Users\diplant\Desktop\DocCheckDemo\DocExamineSystem\Dal\bin\Debug\Dal.pdb
+C:\Users\diplant\Desktop\DocCheckDemo\DocExamineSystem\Dal\obj\Debug\Dal.csprojResolveAssemblyReference.cache
+C:\Users\diplant\Desktop\DocCheckDemo\DocExamineSystem\Dal\obj\Debug\Dal.dll
+C:\Users\diplant\Desktop\DocCheckDemo\DocExamineSystem\Dal\obj\Debug\Dal.pdb
+C:\Users\diplant\Desktop\DocCheckDemo\DocExamineSystem\Dal\bin\Debug\Model.dll
+C:\Users\diplant\Desktop\DocCheckDemo\DocExamineSystem\Dal\bin\Debug\Model.pdb

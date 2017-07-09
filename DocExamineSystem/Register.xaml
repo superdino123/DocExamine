@@ -1,0 +1,24 @@
+﻿<Window x:Class="DocExamineSystem.Register"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DocExamineSystem"
+        mc:Ignorable="d"
+        Title="Register" Height="600" Width="1200" Icon="Doc.png" WindowState="Maximized">
+    <Grid>
+        <Grid>
+            <Grid Margin="365,163,327,84" HorizontalAlignment="Center">
+                <Label Content="用户名：" HorizontalAlignment="Left" Margin="93,70,0,0" VerticalAlignment="Top" Height="29" Width="59"/>
+                <Label Content="密码：" HorizontalAlignment="Left" Height="24" Margin="106,124,0,0" VerticalAlignment="Top" Width="46" RenderTransformOrigin="0.457,3.083"/>
+                <TextBox x:Name="userNameText" HorizontalAlignment="Left" Height="23" Margin="166,70,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="191" Grid.ColumnSpan="2"/>
+                <TextBox x:Name="passwordText" HorizontalAlignment="Left" Height="23" Margin="166,124,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="191" Grid.ColumnSpan="2"/>
+                <Label Content="文档审查系统" Height="38" Margin="162,0,216,0" VerticalAlignment="Top" FontSize="18.667" FontWeight="Bold" HorizontalAlignment="Left" Grid.ColumnSpan="2"/>
+                <Label Content="确认密码：" HorizontalAlignment="Left" Height="24" Margin="82.334,172,0,0" VerticalAlignment="Top" Width="69.666" RenderTransformOrigin="0.457,3.083"/>
+                <TextBox x:Name="passwordAgainText" HorizontalAlignment="Left" Height="23" Margin="166,172,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="191"/>
+                <Button x:Name="registerButton" Content="注  册" HorizontalAlignment="Left" Margin="82,222,0,0" VerticalAlignment="Top" Width="275" Click="register_ButtonClick" Height="30"/>
+                <Label x:Name="toLoginLabel" Content="点击登录" Height="25" Margin="299,252,0,0" Foreground="#FF7A939B" HorizontalAlignment="Left" VerticalAlignment="Top" MouseUp="ToIndex_LabelMouseUp" RenderTransformOrigin="0.483,1.84"/>
+            </Grid>
+        </Grid>
+    </Grid>
+</Window>
